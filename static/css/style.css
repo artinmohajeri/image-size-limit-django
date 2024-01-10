@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+input[type='file'] {
+    display: none;
+}
+.container{
+    width: 500px;
+}
+
+label[for='file'] {
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border: 3px solid aquamarine;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: aquamarine;
+    transition: right 0.4s;
+    z-index: -1
+}
+
+label[for='file']:hover::before {
+    content: "";
+    right: 0%;
+    background-color: aquamarine;
+}
+
+label[for='file']:active::before {
+    content: "";
+    background-color: aqua;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button[type="submit"] {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 3px solid aquamarine;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+button[type="submit"]::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    background-color: aquamarine;
+    transition: left 0.4s;
+    z-index: -1
+}
+
+button[type="submit"]:hover::after {
+    content: "";
+    left: 0%;
+    background-color: aquamarine;
+}
+
+button[type="submit"]:active::after {
+    content: "";
+    background-color: aqua;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #383838;
+    border-radius: 100%;
+    /* background-image: url("{{ obj.img.url }}"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px auto;
+}
+h3{
+    color: rgb(141, 0, 0);
+}
