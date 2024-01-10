@@ -1,7 +1,8 @@
 # Image Size Limit Django
 
-### This is a mid-level project using (Django, bootstrap5, HTML5, CSS3 and js)
+### This is a mid-level project using (Django, bootstrap5, HTML5, CSS3 and js).
 ### I have used ajax to send a json data(size, dimentions) asynchronously to the backend and then reuse that in the template.
+### if you upload an image more that 200KB, the javascript will prevent you to upload the file and it wont be stored in that database.
 
 ![redLine](https://github.com/artinmohajeri/Email-Sender-Django-signals-smtplib/assets/95845593/017c5e23-9d92-49fc-a34f-5f9e244bc9b2)
 # Write these commands in your terminall to run this web application 👇👇👇
